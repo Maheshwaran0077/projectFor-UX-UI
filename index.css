@@ -1,0 +1,495 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* width */
+body::-webkit-scrollbar {
+  
+    width: 7px;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 15px ;  */
+    border-radius: 50%;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #005c91;
+    border-radius: 30px;
+  }
+  
+ 
+/* importFonts */
+@font-face {
+    font-family: "Butler";
+    src: url(fonts/bulter/Butler_Medium_Stencil.otf);
+    font-style: normal;
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family:"Segoe" ;
+    src: url(fonts/segoe/Segoe\ UI\ Black\ 900.ttf );
+    font-weight: normal; 
+}
+
+
+
+.navbar{
+    box-shadow: 5px 5px 15px #005c9180;
+}
+.navbar-brand {
+    color: #005c91 !important;
+    font-family: "Butler" !important;
+    font-weight: 400 !important;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size:22PX;
+}
+
+.nav-item a{
+    color: #005c91 !important;
+   
+     font-family: "Segoe";
+    padding: 5px 10px;
+    margin-left: 30px;
+    font-weight: bold !important;
+    font-size: 15px;
+
+
+}
+.active{
+    background-color:#005c911e !important;
+    border-radius:5px !important;
+}
+span{
+    /* background-color:#005c911e !important; */
+    border-radius:5px !important;
+    color: #005c91;
+    border: none !important;
+    
+}
+
+.nav-item a:hover{
+    background-color:#005c911e !important;
+    border-radius:5px ;
+}
+
+
+/* masterPage */
+.jumbotron{
+    background: url(images/Hello.png);
+  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-attachment: fixed !important;
+    position: relative;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+
+
+
+}
+.mainContent-para{
+    color:#005c91 ;
+    font-size: 33px;
+    overflow: hidden;
+    font-family: "Butler";
+    font-weight: 700px !important;
+    font-style: normal;
+    margin-bottom: -7px;
+    
+
+
+}
+.mainContent{
+    font-size: 75px !important;
+    color:#005c91 ;
+    font-weight: 900;
+    overflow: hidden;
+    /* word-break: normal; */
+}
+@media only screen and (max-width:321px) {
+    .mainContent{
+        font-size: 55px !important;
+    }
+}
+
+
+
+
+
+/*  downbtn */
+.downbtn{
+    position: absolute;
+    bottom: 15px;
+    color:#005c91 ;
+    overflow: hidden;
+    font-family: "Segoe" !important;
+    font-weight: 700;
+
+}
+.downbtn h4{
+    font-size: 17px;
+    font-family: "Butler" !important;
+    font-weight: 900px !important;
+    font-style: normal;
+
+}
+.downbtn img{
+    font-size: 23px;
+    padding-bottom: -10px;
+    overflow: hidden;
+    animation: down .7s infinite alternate;
+}
+@keyframes down {
+    from{
+        transform: translateY(1px);
+    }
+    
+    to{
+        transform: translateY(10px);
+
+    }
+}
+
+/* serviceSection */
+
+
+.serviceSection{
+    
+    background-color: #005c911e;
+    position: relative;
+}
+.serviceSection h1{
+    color:#005c91 !important;
+    font-family: "Butler" !important;
+    font-weight: 900px !important;
+    font-style: normal;  
+    font-size: 120px !important; 
+}
+@media  (max-width:763px) {
+    .serviceSection h1{
+font-size: 48px !important;
+
+    }
+    .footer h1 {
+        font-size: 48px !important;
+
+    }
+    .workDesings h2{
+font-size: 20px !important;}
+
+}
+
+
+
+.contentBtn{
+    padding: 15px;
+}
+.contentBtn button{
+    background-color: #005c91;
+    margin: 5px 5px;
+    margin-top: 15px;
+    color: white;
+    transition: .5s;
+    border-radius: 10px;
+
+}
+.contentBtn button:hover{
+    color: white;
+    box-shadow: 5px 5px 15px #005c919a;
+    transition: .5s !important;
+}
+
+.desingimg img{
+    display: flex;
+    justify-content: end;
+    
+    float: right;
+    /* margin-bottom: -110px; */
+    margin-bottom:-20vh;
+    position: static;
+    margin-right:20px;
+    z-index: 1;
+}
+
+@media  (max-width:769px) {
+    .desingimg img{
+margin-top: -155px ;
+
+    };
+}
+
+
+
+@media  (max-width:1024px) {
+    .desingimg img{
+margin-bottom: -15px !important;
+
+    };
+}
+
+
+@media  (max-width:1440px) {
+    .desingimg img{
+margin-bottom: -145px !important;
+
+    };
+}
+
+
+
+button
+{
+    font-family: "Segoe";
+font-weight: 700;
+    font-style: normal;
+
+    
+
+}
+
+/* workDesings */
+hr{
+    color: #005c91b6 !important;
+border:1px solid #005c91b6;
+box-shadow: 5px 5px 5px #005c91b6;    
+}
+
+.workDesings{
+
+    border-radius: 30px;          
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+
+}
+.desingCard{
+    position: relative;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color:   #005c91;
+  width: 50%;
+}
+
+h1,h2,h4{
+    cursor: context-menu;
+}
+.desingCard button{
+    background-color: transparent !important;
+    
+
+}
+.carousel-indicators button{
+    width: 50%;
+    background-color: #005c91!important;
+}
+.sittingImg{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    margin-bottom: -79px;
+    z-index: -1;
+}
+.sittingImg img{
+    width: 170px !important;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+}
+.desingheading {
+    color:#005c91 !important;
+        font-size: 1px !important; 
+
+    display: flex ;
+    justify-content: center;
+align-items: center;
+}
+.workDesings h2{
+    color:#005c91 ;
+    font-weight: 900px !important;
+    font-style: normal;
+    font-family: "Segoe";
+font-size: 33px;
+    margin-top: 30px;
+
+
+}
+
+
+
+/* contact */
+
+label{
+    color: #005c91;
+    font-family: "Segoe";
+    font-weight: bold;
+    font-size: 20px;
+}
+.contactUs{
+    font-size: 8vw !important; 
+    padding: 20px;
+}
+.footercontact{
+    background-color:   #005c911e;
+    padding:30px;
+}
+.contactLink{
+    height: 10%;
+}
+.contactLink p{
+    
+    font-family: "Segoe";
+font-weight: bold;
+/* font-size: .999em; */
+font-size: 1em         ;
+color: #005c91;
+transition: .5s;
+text-align: justify;
+word-wrap: break-word;
+
+cursor: pointer;
+}
+.contactLink i{
+    border-right: 2px solid #005c91b6;
+    padding: 5px;
+
+    /* font-size: 30px; */
+
+}
+.contactLink p:hover{
+text-shadow:  15px 15px 15px #005c91b6;
+transition: .5s
+;}
+
+.contactpart{
+    background-color: #005c911e;
+}
+.footer h1{
+    color:#005c91;
+    font-family: "Butler" !important;
+    font-weight: 900px !important;
+}
+/* .carousel-inner{
+   min-height: 100px!important;
+}
+.slider img{
+    height:100% !important;
+}
+.carousel-item {
+    height:100vh;
+    width: 100% !important;
+    
+} */
+
+.modal-body img{
+height: 350px !important;
+width: 100% !important;
+}
+.modal-body p{
+    
+    font-family: "Segoe";
+
+    color: #005c91;
+
+
+}
+
+
+ .logobtn img{
+    width: 100px !important;
+    height: 60px  !important;
+   
+
+
+}
+.modal-header h5{
+    color:#005c91 !important;
+    font-family: "Butler" !important;
+    font-weight: 900px !important;
+    font-style: normal;    
+    font-size: 25px;
+
+}
+.modal-footer button{
+    font-family: "Segoe";
+font-weight: 700;
+background-color:#005c91 ;
+border-radius: 10px;
+color: white;
+}
+.modal-footer button:hover{
+    font-family: "Segoe";
+    font-weight: 700;
+    background-color:#005c91 ;
+    border-radius: 10px;
+    color: white;
+}
+
+.card a{
+    font-size: 35px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color:white ;
+    background-color: #005c91 !important;
+
+    
+}
+.card  button {
+    color: white !important;
+    font-family: "Segoe";
+font-weight: 700;
+    font-style: normal;
+    background-color:#005c91 ;
+    transition: .1s !important;
+    border-radius: 10px;
+
+}
+/* .card button:hover{
+    
+    box-shadow: 5px 5px 15px #005c919a;
+    transition: .5s !important;
+} */
+.contactIcon a {
+    background-color: none;
+    border-radius: 10px;
+    
+
+}
+.contactIcon i {
+    border-radius: 10px;
+width: 100%;    outline: none;
+
+}
+.contactIcon button {
+    border: none;
+    border-radius: 10px;
+
+}
+
+.contactIcon :hover{
+    box-shadow: 5px 5px 15px #005c919a;
+    transition: .5s !important;
+}
